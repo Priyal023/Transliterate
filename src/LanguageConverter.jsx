@@ -35,7 +35,7 @@ const LanguageConverter = () => {
 
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1>Transliterate</h1>
+      <h1 style={{textDecoration:"underline"}}>Transliterate</h1>
       <h4 style={{ marginBottom: "10px" }}>Type in English :</h4>
       <textarea
         rows="7"
