@@ -35,9 +35,10 @@ const LanguageConverter = () => {
 
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h3 style={{ marginBottom: "10px" }}>Type in English, see Hindi</h3>
+      <h1>Transliterate</h1>
+      <h4 style={{ marginBottom: "10px" }}>Type in English :</h4>
       <textarea
-        rows="4"
+        rows="7"
         cols="50"
         value={text}
         onChange={handleInputChange}
@@ -47,16 +48,17 @@ const LanguageConverter = () => {
           padding: "10px",
           fontSize: "16px",
           marginBottom: "20px",
-          border: "1px solid #ccc",
+          border: "3px solid black",
           borderRadius: "5px",
         }}
       ></textarea>
       <div>
         <h4 style={{ marginBottom: "10px" }}>Hindi Output:</h4>
         <textarea
-          rows="4"
+          rows="8"
           cols="50"
           value={convertedText}
+          placeholder="Output in hindi.."
           
           style={{
             width: "100%",
@@ -64,7 +66,7 @@ const LanguageConverter = () => {
             fontSize: "16px",
             backgroundColor: "#f4f4f4",
             color: "#333",
-            border: "1px solid #ccc",
+            border: "3px solid black",
             borderRadius: "5px",
           }}
         ></textarea>
